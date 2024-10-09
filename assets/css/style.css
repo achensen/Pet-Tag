@@ -7,6 +7,9 @@ body {
     flex-direction: column
 }
 
+h1 {
+    padding: 1rem;
+}
 
 main {
     flex: 1;
