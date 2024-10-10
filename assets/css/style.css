@@ -34,3 +34,12 @@ footer {
 .active {
     display: block;
 }
+
+.backBtn {
+    background-color: orange;
+    border: orange;
+}
+
+.backBtn:hover {
+    background-color: rgb(175, 114, 0);
+}
