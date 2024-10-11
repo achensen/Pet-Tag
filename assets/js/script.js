@@ -11,7 +11,7 @@ function showAnimals() {
 function getName() {
     document.getElementById('personality').classList.remove('active');
     
-    const names = ['Charlie', 'Michael', 'Khadijih', 'Erin', 'Mati'];
+    const names = ['Charlie', 'Michael', 'Khadijih', 'Erin', 'Mati', 'Zippy', 'Dash', 'Snuggles', 'Shadow', 'Snugs', 'Dozer', 'Echo', 'Gizmo', 'Nibbles', 'Breeze', 'Sonny', 'Puff', ];
     const randomName = names[Math.floor(Math.random() * names.length)];
     
     const resultDiv = document.getElementById('result');
