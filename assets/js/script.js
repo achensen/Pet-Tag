@@ -7,3 +7,5 @@ function showAnimals() {
     document.getElementById('personality').classList.remove('active');
     document.getElementById('animals').classList.add('active');
 }
+
+
