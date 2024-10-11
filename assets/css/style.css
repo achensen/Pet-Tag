@@ -76,3 +76,14 @@ footer {
 .result {
     font-size: 80px;
 }
+
+@media (max-width: 1115px) {
+    .result {
+        font-size: 50px;
+    }
+}
+@media (max-width: 700px) {
+    .result {
+        font-size: 28px;
+    }
+}
