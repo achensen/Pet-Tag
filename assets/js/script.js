@@ -8,4 +8,13 @@ function showAnimals() {
     document.getElementById('animals').classList.add('active');
 }
 
-
+function getName() {
+    document.getElementById('personality').classList.remove('active');
+    
+    const names = ['Charlie', 'Michael', 'Khadijih', 'Erin', 'Mati'];
+    const randomName = names[Math.floor(Math.random() * names.length)];
+    
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `Your pet's new name is ${randomName}!`;
+    resultDiv.style.display = 'block';
+}

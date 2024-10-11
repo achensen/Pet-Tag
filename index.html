@@ -15,7 +15,7 @@
     <h2>Easy Way to Find a Name</h2>
     
     <nav>
-        <form class="container-fluid justify-content-start petsBtn">
+        <form class="petsBtn">
             <button type="button" class="btn btn-primary">My Pets &#128062; </button>
         </form>
       </nav>
@@ -31,15 +31,15 @@
     </div>
 
     <div class="container" id="personality">
-        <button type="button" class="btn btn-primary" >Hyperactive</button>
-        <button type="button" class="btn btn-primary" >Clingy</button>
-        <button type="button" class="btn btn-primary" >Lazy</button>
-        <button type="button" class="btn btn-primary" >Vocal</button>
-        <button type="button" class="btn btn-primary" >Old</button>
+        <button type="button" class="btn btn-primary" onclick="getName()">Hyperactive</button>
+        <button type="button" class="btn btn-primary" onclick="getName()">Clingy</button>
+        <button type="button" class="btn btn-primary" onclick="getName()">Lazy</button>
+        <button type="button" class="btn btn-primary" onclick="getName()">Vocal</button>
+        <button type="button" class="btn btn-primary" onclick="getName()">Old</button>
         <button type="button" class="btn btn-primary backBtn" onclick="showAnimals()">Back to Animals</button>
     </div>
 
-    <div id="result"></div>
+    <div id="result" class="result"></div>
 
    </main>
 
