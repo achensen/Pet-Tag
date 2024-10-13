@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(102, 154, 170);
+    background-color: rgb(99, 145, 159);
     min-height: 100vh;
     align-items: center;
     display: flex;
@@ -8,10 +8,11 @@ body {
 }
 
 header {
-    background-color: rgb(57, 137, 137);
+    background-color: rgb(52, 122, 122);
     width: 100%;
     height: 190px;
     border-bottom: 10px solid rgb(92, 9, 92);
+    color: antiquewhite;
 
 }
 
@@ -77,6 +78,12 @@ footer {
 .btn {
     margin-bottom: 10px;
     background-color: rgb(92, 9, 92) ; 
+    color: antiquewhite;
+
+}
+
+.btn:hover{
+    background-color: rgb(52, 122, 122);
 }
 
 .backBtn {
