@@ -79,11 +79,13 @@ footer {
     margin-bottom: 10px;
     background-color: rgb(92, 9, 92) ; 
     color: antiquewhite;
+    border-color: antiquewhite;
 
 }
 
 .btn:hover{
     background-color: rgb(52, 122, 122);
+    border-color: rgb(92, 9, 92);
 }
 
 .backBtn {
