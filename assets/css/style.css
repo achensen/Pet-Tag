@@ -47,6 +47,11 @@ main {
     gap: 24px;
 }
 
+a {
+    text-decoration: unset;
+    color: antiquewhite;
+}
+
 footer {
     display: flex;
     flex-direction: column;
