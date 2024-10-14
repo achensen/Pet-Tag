@@ -11,44 +11,37 @@
 
 <body>
    <header>
-    <h1>Pet Tag</h1>
-    <h2>Pet Name Generator</h2>
-    
-    <!-- <nav>
-        <form class="petsBtn">
-            <button type="button" class="btn btn-primary">My Pets &#128062; </button>
-        </form>
-      </nav> -->
+        <h1>Pet Tag</h1>
+        <h2>Pet Name Generator</h2>
    </header> 
 
    <main>
-        <form class="petsBtn">
+        <div>
             <button type="button" class="btn btn-primary">My Pets &#128062; </button>
-        </form>
+        </div>
         
-    <div class="container active" id="animals">
-        <button type="button" class="btn btn-primary" onclick="showPersonality()">Dog</button>
-        <button type="button" class="btn btn-primary" onclick="showPersonality()">Cat</button>
-        <button type="button" class="btn btn-primary" onclick="showPersonality()">Bird</button>
-        <button type="button" class="btn btn-primary" onclick="showPersonality()">Reptile</button>
-        <button type="button" class="btn btn-primary" onclick="showPersonality()">Fish</button>
-    </div>
+        <div class="container active" id="animals">
+            <button type="button" class="btn btn-primary" onclick="showPersonality()">Dog</button>
+            <button type="button" class="btn btn-primary" onclick="showPersonality()">Cat</button>
+            <button type="button" class="btn btn-primary" onclick="showPersonality()">Bird</button>
+            <button type="button" class="btn btn-primary" onclick="showPersonality()">Reptile</button>
+            <button type="button" class="btn btn-primary" onclick="showPersonality()">Fish</button>
+        </div>
 
-    <div class="container" id="personality">
-        <button type="button" class="btn btn-primary" onclick="getName()">Hyperactive</button>
-        <button type="button" class="btn btn-primary" onclick="getName()">Clingy</button>
-        <button type="button" class="btn btn-primary" onclick="getName()">Lazy</button>
-        <button type="button" class="btn btn-primary" onclick="getName()">Vocal</button>
-        <button type="button" class="btn btn-primary" onclick="getName()">Old</button>
-        <button type="button" class="btn btn-primary backBtn" onclick="showAnimals()">Back to Animals</button>
-    </div>
+        <div class="container" id="personality">
+            <button type="button" class="btn btn-primary" onclick="getName()">Hyperactive</button>
+            <button type="button" class="btn btn-primary" onclick="getName()">Clingy</button>
+            <button type="button" class="btn btn-primary" onclick="getName()">Lazy</button>
+            <button type="button" class="btn btn-primary" onclick="getName()">Vocal</button>
+            <button type="button" class="btn btn-primary" onclick="getName()">Old</button>
+            <button type="button" class="btn btn-primary backBtn" onclick="showAnimals()">Back to Animals</button>
+        </div>
 
-    <div id="result" class="result"></div>
-
+        <div id="result" class="result"></div>
    </main>
    
    <footer>
-    <p>Thank you</p>
+        <p>Thank you</p>
    </footer>
    
    <script src="./assets/js/script.js"></script>
