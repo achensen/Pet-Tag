@@ -15,6 +15,11 @@ function getName() {
     const randomName = names[Math.floor(Math.random() * names.length)];
     
     const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `Your pet's new name is ${randomName}!`;
-    resultDiv.style.display = 'block';
+    resultDiv.innerHTML = `Your pet's new name is ${randomName}! <button onclick="keepName('${randomName}')">Keep Name!</button>`;    resultDiv.style.display = 'block';
 }
+
+function keepName(name) {
+    localStorage.setItem('savedPetName', name);
+    alert(`${name} has been saved!`);
+}
+
