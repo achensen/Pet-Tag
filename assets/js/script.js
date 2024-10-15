@@ -19,11 +19,16 @@ function getName() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `Your pet's new name is ${randomName}!`;    
     resultDiv.style.display = 'block';
-    document.getElementById('keepNameBtn').classList.add('active');
+    document.getElementById('keepNameBtn').classList.remove('hidden');
+    document.getElementById('home').classList.remove('hidden');
 }
 
 document.getElementById('keepNameBtn').addEventListener('click', function() {
-    alert(`You have kept the name: ${storedName}`);
+    alert(`You saved the name ${storedName}!`);
     localStorage.setItem('savedPetName', storedName);
 
 });
+
+function goHome() {
+    location.reload()
+}

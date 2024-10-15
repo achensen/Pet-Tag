@@ -78,6 +78,18 @@ footer {
 
 }
 
+.resultBtns {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
 .btn:hover{
     background-color: rgb(52, 122, 122);
     border-color: rgb(92, 9, 92);
