@@ -25,9 +25,10 @@ function getName() {
 
 document.getElementById('keepNameBtn').addEventListener('click', function() {
     alert(`You saved the name ${storedName}!`);
-    localStorage.setItem('savedPetName', storedName);
-
-});
+    let savedNames = JSON.parse(localStorage.getItem('savedPetNames')) || [];
+    savedNames.push(storedName);
+    localStorage.setItem('savedPetNames', JSON.stringify(savedNames));
+})
 
 function goHome() {
     location.reload()
