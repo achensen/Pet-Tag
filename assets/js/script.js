@@ -31,7 +31,7 @@ document.getElementById('keepNameBtn').addEventListener('click', function() {
     myPets.push(storedName);
     localStorage.setItem('myPets', JSON.stringify(myPets));
     
-    displaySavedNames();
+    
 })
 
 function goHome() {
