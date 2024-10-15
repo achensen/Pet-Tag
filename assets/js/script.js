@@ -19,15 +19,19 @@ function getName() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `Your pet's new name is ${randomName}!`;    
     resultDiv.style.display = 'block';
+    
     document.getElementById('keepNameBtn').classList.remove('hidden');
     document.getElementById('home').classList.remove('hidden');
 }
 
 document.getElementById('keepNameBtn').addEventListener('click', function() {
     alert(`You saved the name ${storedName}!`);
-    let savedNames = JSON.parse(localStorage.getItem('savedPetNames')) || [];
-    savedNames.push(storedName);
-    localStorage.setItem('savedPetNames', JSON.stringify(savedNames));
+    let myPets = JSON.parse(localStorage.getItem('myPets')) || [];
+    
+    myPets.push(storedName);
+    localStorage.setItem('myPets', JSON.stringify(myPets));
+    
+    displaySavedNames();
 })
 
 function goHome() {

@@ -21,15 +21,35 @@
         </button>
     </div>
 
-    <div>
-        
-    </div>
-
+    <div id="myPets"></div>
    </main>
 
    <footer>
         <p>Thank you</p>
     </footer>
+
+    <script>
+        function displaySavedNames() {
+            const myPetsDiv = document.getElementById('myPets');
+            myPetsDiv.innerHTML = '';  // Clear previous content
+
+            // Retrieve saved names from localStorage
+            let myPets = JSON.parse(localStorage.getItem('myPets')) || [];
+
+            if (myPets.length > 0) {
+                myPets.forEach(function(name) {
+                    // Create a new paragraph element for each name
+                    const nameElement = document.createElement('p');
+                    nameElement.textContent = name;
+                    myPetsDiv.appendChild(nameElement);
+                });
+            } else {
+                myPetsDiv.innerHTML = '<p>No saved names yet!</p>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', displaySavedNames);
+    </script>
 </body>
 
 </html>
