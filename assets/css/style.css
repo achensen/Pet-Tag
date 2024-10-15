@@ -1,7 +1,7 @@
 
 body {
     background-color: rgb(99, 145, 159);
-    min-height: 100vh;
+
     align-items: center;
     display: flex;
     flex-direction: column
@@ -61,15 +61,16 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    
 }
 
 .page-container {
     display: flex;
+    min-height: 100vh;
 }
 
 .page-container > main {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    padding-left: 360px;
     width: 80%;
 }
 
