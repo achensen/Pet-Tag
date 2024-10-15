@@ -66,7 +66,7 @@ footer {
 
 .page-container {
     display: flex;
-    min-height: 100vh;
+    min-height: 665px;
 }
 
 .page-container > main {
