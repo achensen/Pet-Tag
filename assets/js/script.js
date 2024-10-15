@@ -15,11 +15,14 @@ function getName() {
     const randomName = names[Math.floor(Math.random() * names.length)];
     
     const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `Your pet's new name is ${randomName}! <button onclick="keepName('${randomName}')">Keep Name!</button>`;    resultDiv.style.display = 'block';
+    resultDiv.innerHTML = `Your pet's new name is ${randomName}!`;    
+    resultDiv.style.display = 'block';
+    document.getElementById('keepNameBtn').classList.add('active');
+
+    localStorage.setItem('savedPetName', randomName);
 }
 
-function keepName(name) {
-    localStorage.setItem('savedPetName', name);
-    alert(`${name} has been saved!`);
+function displayKeptName() {
+    const savedName = localStorage.getItem('savedPetName');
+    alert(`${savedName} has been saved!`);
 }
-
