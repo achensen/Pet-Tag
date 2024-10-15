@@ -63,6 +63,24 @@ footer {
     padding: 20px;
 }
 
+.page-container {
+    display: flex;
+}
+
+.page-container > main {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 80%;
+}
+
+.page-container > aside {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 20%;
+    border-left: solid 3px rgb(92, 9, 92);
+    padding-left: 20px;
+}
+
 .container {
     display: none;
 }
