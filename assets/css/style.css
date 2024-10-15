@@ -53,10 +53,14 @@ a {
 }
 
 footer {
+    background-color: rgb(92, 9, 92);
+    width: 100%;
+    color: ghostwhite;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .container {
