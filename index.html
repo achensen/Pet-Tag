@@ -31,12 +31,12 @@
         </div>
 
         <div class="container" id="personality">
-            <button type="button" class="btn btn-primary" onclick="getName(); updatePersonalityText()">Hyperactive</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updatePersonalityText()">Clingy</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updatePersonalityText()">Lazy</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updatePersonalityText()">Vocal</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updatePersonalityText()">Old</button>
-            <button type="button" class="btn btn-primary backBtn" onclick="showAnimals()">Back to Animals</button>
+            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Hyperactive</button>
+            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Clingy</button>
+            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Lazy</button>
+            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Vocal</button>
+            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Old</button>
+            <button type="button" class="btn btn-primary backBtn" onclick="updateAsideText(); showAnimals()">Back to Animals</button>
         </div>
 
         <div id="result" class="result"></div>

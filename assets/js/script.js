@@ -56,11 +56,10 @@ function updateAsideText(animal) {
         case 'Fish':
             asideText.textContent = "Pick a characteristic and swim through names for your new fish!";
             break;
+        case 'Personality':
+             asideText.textContent = "Congratulations! You can save the name or click Home to try again!";
+             break;
         default:
             asideText.textContent = "Can't think of a name? Click on an animal type to begin generating a name for your new pet!";
     }
-}
-
-function updatePersonalityText() {
-    document.getElementById('aside-text').innerText = "Congratulations! You can save the name or click Home to try again!";
 }
