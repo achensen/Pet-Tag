@@ -147,7 +147,12 @@ footer {
 }
 
 #result {
-    display: none
+    display: none;
+    display: none; /* Initially hidden */
+    text-align: center; /* Center text horizontally */
+    margin: 0 auto; /* Ensure it's centered in the container */
+    width: 100%; /* Ensure it takes up the available space */
+    font-size: 80px;
 }
 
 .result {
@@ -165,9 +170,8 @@ footer {
         align-items: center; /* Center both main and aside */
     }
 
-    page-container > main {
-        width: 100%; /* Make both take full width */
-    
+    main {
+        width: 100%;
     }
 
     aside {
