@@ -23,11 +23,11 @@
         </div>
         
         <div class="container active" id="animals">
-            <button type="button" class="btn btn-primary" onclick="showPersonality()">Dog <i class="fa-duotone fa-solid fa-dog"></i></button>
-            <button type="button" class="btn btn-primary" onclick="showPersonality()">Cat <i class="fa-solid fa-cat"></i></button>
-            <button type="button" class="btn btn-primary" onclick="showPersonality()">Bird <i class="fa-solid fa-dove"></i></button>
-            <button type="button" class="btn btn-primary" onclick="showPersonality()">Reptile <i class="fa-solid fa-dragon"></i></button>
-            <button type="button" class="btn btn-primary" onclick="showPersonality()">Fish <i class="fa-duotone fa-solid fa-fish"></i></button>
+            <button type="button" class="btn btn-primary" onclick="updateAsideText('Dog'); showPersonality()">Dog <i class="fa-duotone fa-solid fa-dog"></i></button>
+            <button type="button" class="btn btn-primary" onclick="updateAsideText('Cat'); showPersonality()">Cat <i class="fa-solid fa-cat"></i></button>
+            <button type="button" class="btn btn-primary" onclick="updateAsideText('Bird'); showPersonality()">Bird <i class="fa-solid fa-dove"></i></button>
+            <button type="button" class="btn btn-primary" onclick="updateAsideText('Reptile'); showPersonality()">Reptile <i class="fa-solid fa-dragon"></i></button>
+            <button type="button" class="btn btn-primary" onclick="updateAsideText('Fish'); showPersonality()">Fish <i class="fa-duotone fa-solid fa-fish"></i></button>
         </div>
 
         <div class="container" id="personality">
@@ -48,7 +48,7 @@
    </main>
 
    <aside>
-    <p>
+    <p id="aside-text">
         Can't think of a name? Click on an animal type to begin generating a name for your new pet!
     </p>
    </aside>

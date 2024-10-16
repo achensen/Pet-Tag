@@ -47,7 +47,7 @@ h1, h2 {
 }
 
 main {
-    flex: 1;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,31 +80,36 @@ footer p {
 
 .page-container {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    background-color: rgb(99, 145, 159);
+    min-height: 100vh;
 }
 
 .page-container > main {
-    padding-left: 360px;
     width: 80%;
-    flex-grow: 1; /* Adjust width dynamically */
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    
 }
 
 .page-container > aside {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    width: 20%;
-    border-left: solid 3px rgb(92, 9, 92);
-    padding-left: 20px;
-    padding-right:10px;
+    width: 80%;
+    border-left: none; 
+    border-top: solid 3px rgb(92, 9, 92); 
+    padding-top: 40px;
+    padding-left: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,9 +163,9 @@ footer p {
 
 #result {
     display: none;
-    text-align: center; /* Center text horizontally */
+    text-align: center; 
     margin: 0 auto; /* Ensure it's centered in the container */
-    width: 100%; /* Ensure it takes up the available space */
+    width: 100%; 
     
 }
 
@@ -176,7 +181,7 @@ footer p {
     
     .page-container {
         flex-direction: column;
-        align-items: center; /* Center both main and aside */
+        align-items: center;
     }
 
     main {

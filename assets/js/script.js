@@ -37,3 +37,26 @@ document.getElementById('keepNameBtn').addEventListener('click', function() {
 function goHome() {
     location.reload()
 }
+
+function updateAsideText(animal) {
+    const asideText = document.getElementById('aside-text');
+    switch(animal) {
+        case 'Dog':
+            asideText.textContent = "Woof! Pick a characteristic to generate a cool name for your new dog!";
+            break;
+        case 'Cat':
+            asideText.textContent = "Meow! Let's pick a characteristic to find a perfect name for your cat!";
+            break;
+        case 'Bird':
+            asideText.textContent = "Chirp chirp! Pick a characteristic to get a name for your bird!";
+            break;
+        case 'Reptile':
+            asideText.textContent = "Slither in style! Pick a characteristic to generate a reptile name!";
+            break;
+        case 'Fish':
+            asideText.textContent = "Pick a characteristic and swim through names for your new fish!";
+            break;
+        default:
+            asideText.textContent = "Can't think of a name? Click on an animal type to begin generating a name for your new pet!";
+    }
+}
