@@ -181,6 +181,7 @@ footer {
     .page-container > main {
         padding-left: 0px;
         margin: 2rem;
+        margin-bottom: 0;
     }
 
     .page-container > aside {
