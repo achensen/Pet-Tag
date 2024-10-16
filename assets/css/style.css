@@ -113,6 +113,11 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#aside-text {
+    font-weight: bold;
 }
 
 .container {

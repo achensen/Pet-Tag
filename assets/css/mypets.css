@@ -34,6 +34,11 @@ main {
     gap: 24px;
 }
 
+#myPets {
+    font-weight: bold;
+    text-align: center;
+}
+
 footer {
     background-color: rgb(92, 9, 92);
     width: 100%;

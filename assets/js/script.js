@@ -11,7 +11,7 @@ function showAnimals() {
 function getName() {
     document.getElementById('personality').classList.remove('active');
     
-    const names = ['Charlie', 'Michael', 'Khadijih', 'Erin', 'Mati', 'Zippy', 'Dash', 'Snuggles', 'Shadow', 'Snugs', 'Dozer', 'Echo', 'Gizmo', 'Nibbles', 'Breeze', 'Sonny', 'Puff', ];
+    const names = ['Charlie', 'Michael', 'Khadijih', 'Erin', 'Mati', 'Zippy', 'Dash', 'Snuggles', 'Shadow', 'Snugs', 'Dozer', 'Echo', 'Gizmo', 'Nibbles', 'Breeze', 'Sonny', 'Puff', 'Aang', 'Zuko', 'Katara', 'Iroh', 'Bumi', 'Momo', 'Sokka', 'Toph', 'Appa', 'Azula'];
     const randomName = names[Math.floor(Math.random() * names.length)];
     
     storedName = randomName;
@@ -59,4 +59,8 @@ function updateAsideText(animal) {
         default:
             asideText.textContent = "Can't think of a name? Click on an animal type to begin generating a name for your new pet!";
     }
+}
+
+function updatePersonalityText() {
+    document.getElementById('aside-text').innerText = "Congratulations! You can save the name or click Home to try again!";
 }
