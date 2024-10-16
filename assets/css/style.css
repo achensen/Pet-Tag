@@ -161,7 +161,7 @@ footer p {
     text-align: center; /* Center text horizontally */
     margin: 0 auto; /* Ensure it's centered in the container */
     width: 100%; /* Ensure it takes up the available space */
-    font-size: 80px;
+    
 }
 
 .result {
