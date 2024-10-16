@@ -66,10 +66,16 @@ footer {
     color: ghostwhite;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 15px;
     padding: 30px;
     flex-shrink: 0; /* Keep footer fixed at the bottom */
+    flex-direction: row;
+}
+
+footer p {
+    margin: 0;
 }
 
 .page-container {
@@ -98,6 +104,11 @@ footer {
     width: 20%;
     border-left: solid 3px rgb(92, 9, 92);
     padding-left: 20px;
+    padding-right:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -147,7 +158,6 @@ footer {
 
 #result {
     display: none;
-    display: none; /* Initially hidden */
     text-align: center; /* Center text horizontally */
     margin: 0 auto; /* Ensure it's centered in the container */
     width: 100%; /* Ensure it takes up the available space */
