@@ -14,7 +14,8 @@ function getName() {
     const names = ['Charlie', 'Michael', 'Khadijih', 'Erin', 'Mati', 'Zippy', 'Dash', 'Snuggles', 'Shadow', 'Snugs', 'Dozer', 'Echo', 'Gizmo', 'Nibbles', 'Breeze', 'Sonny', 'Puff', 'Aang', 'Zuko', 'Katara', 'Iroh', 'Bumi', 'Momo', 'Sokka', 'Toph', 'Appa', 'Azula'];
     const randomName = names[Math.floor(Math.random() * names.length)];
     //if statement , if name exists in local storage call get name fuction again, else only run if "if"stsamnt is false 
-    if()
+    // // if(localStorage.getitem){
+    // }
     storedName = randomName;
 
     const resultDiv = document.getElementById('result');
