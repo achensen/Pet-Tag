@@ -76,3 +76,11 @@ a {
     border-color: rgb(92, 9, 92);
 }
 
+.removeBtn {
+    background-color: darkred;
+    color: antiquewhite;
+    width: 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+}

@@ -42,26 +42,55 @@
             let myPets = JSON.parse(localStorage.getItem('myPets')) || [];
 
             if (myPets.length > 0) {
-                myPets.forEach(function(name) {
+                myPets.forEach(function(name, index) {
+                    // Create a container for each name and its remove button
+                    const nameContainer = document.createElement('div');
+                    nameContainer.classList.add('name-container');
+
                     // Create a new paragraph element for each name
                     const nameElement = document.createElement('p');
                     nameElement.textContent = name;
-                    
-                    myPetsDiv.appendChild(nameElement);
+
+                    // Create a "Remove" button next to each name
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'X';
+                    removeButton.classList.add('removeBtn');
+                    removeButton.onclick = function() {
+                        removeName(index);
+                    };
+
+                    // Append the name and button to the container
+                    nameContainer.appendChild(nameElement);
+                    nameContainer.appendChild(removeButton);
+
+                    // Append the container to the main div
+                    myPetsDiv.appendChild(nameContainer);
                 });
             } else {
                 myPetsDiv.innerHTML = '<p>No saved names yet!</p>';
             }
         }
 
-        function clearPetNames (){
-            console.log ('Cleared Pet Names')
-            localStorage.clear()
-            displaySavedNames()
+        // Function to remove a specific name from localStorage
+        function removeName(index) {
+            let myPets = JSON.parse(localStorage.getItem('myPets')) || [];
+
+            // Remove the name at the specified index
+            myPets.splice(index, 1);
+
+            // Update localStorage and re-render the names
+            localStorage.setItem('myPets', JSON.stringify(myPets));
+            displaySavedNames();  // Refresh the display
         }
 
-        document.getElementById('clearButton').addEventListener('click', clearPetNames)
+        function clearPetNames() {
+            console.log('Cleared Pet Names');
+            localStorage.clear();
+            displaySavedNames();
+        }
 
+        // Attach event listeners and display names on page load
+        document.getElementById('clearButton').addEventListener('click', clearPetNames);
         document.addEventListener('DOMContentLoaded', displaySavedNames);
     </script>
 </body>
