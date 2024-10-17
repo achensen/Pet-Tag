@@ -11,11 +11,24 @@ function showAnimals() {
 function getName() {
     document.getElementById('personality').classList.remove('active');
     
+    // Retrieve saved names from localStorage
+    let myPets = JSON.parse(localStorage.getItem('myPets')) || [];
+    
     const names = ['Charlie', 'Michael', 'Khadijih', 'Erin', 'Mati', 'Zippy', 'Dash', 'Snuggles', 'Shadow', 'Snugs', 'Dozer', 'Echo', 'Gizmo', 'Nibbles', 'Breeze', 'Sonny', 'Puff', 'Aang', 'Zuko', 'Katara', 'Iroh', 'Bumi', 'Momo', 'Sokka', 'Toph', 'Appa', 'Azula'];
-    const randomName = names[Math.floor(Math.random() * names.length)];
-    //if statement , if name exists in local storage call get name fuction again, else only run if "if"stsamnt is false 
-    // // if(localStorage.getitem){
-    // }
+
+    // Filter out names that are already saved in localStorage
+    const availableNames = names.filter(name => !myPets.includes(name));
+    
+    // Check if there are any available names left
+    if (availableNames.length === 0) {
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `No new names available! All possible names have been saved.`;
+        resultDiv.style.display = 'block';
+        return;
+    }
+
+    // Generate a random name from the available names
+    const randomName = availableNames[Math.floor(Math.random() * availableNames.length)];
     storedName = randomName;
 
     const resultDiv = document.getElementById('result');
