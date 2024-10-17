@@ -20,7 +20,7 @@
             <a href="./index.html">Home</a>
         </button>
 
-        <button type="button" class="btn btn-primary">Clear All Pet Names</button>
+        <button type="button" class="btn btn-primary" id="clearButton">Clear All Pet Names</button>
 
         
 
@@ -52,6 +52,14 @@
                 myPetsDiv.innerHTML = '<p>No saved names yet!</p>';
             }
         }
+
+        function clearPetNames (){
+            console.log ('Cleared Pet Names')
+            localStorage.clear()
+            displaySavedNames()
+        }
+
+        document.getElementById('clearButton').addEventListener('click', clearPetNames)
 
         document.addEventListener('DOMContentLoaded', displaySavedNames);
     </script>
