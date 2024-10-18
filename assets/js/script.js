@@ -33,7 +33,7 @@ function getName() {
 
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `Your pet's new name is ${randomName}!`;    
-    resultDiv.style.display = 'block';
+    resultDiv.style.display = 'flex';
     
     document.getElementById('keepNameBtn').classList.remove('hidden');
     document.getElementById('home').classList.remove('hidden');
