@@ -13,55 +13,53 @@
    <header>
         <h1>Pet Tag</h1>
         <h2>Pet Name Generator</h2>
-   </header> 
-<section class="page-container">
-   <main>
-        <div>
-            <button type="button" class="btn btn-primary"> 
-                <a href="./mypets.html">My Pets &#128062;</a>
-            </button>
-        </div>
-        
-        <div class="container active" id="animals">
-            <button type="button" class="btn btn-primary" onclick="updateAsideText('Dog'); showPersonality()">Dog <i class="fa-duotone fa-solid fa-dog"></i></button>
-            <button type="button" class="btn btn-primary" onclick="updateAsideText('Cat'); showPersonality()">Cat <i class="fa-solid fa-cat"></i></button>
-            <button type="button" class="btn btn-primary" onclick="updateAsideText('Bird'); showPersonality()">Bird <i class="fa-solid fa-dove"></i></button>
-            <button type="button" class="btn btn-primary" onclick="updateAsideText('Reptile'); showPersonality()">Reptile <i class="fa-solid fa-dragon"></i></button>
-            <button type="button" class="btn btn-primary" onclick="updateAsideText('Fish'); showPersonality()">Fish <i class="fa-duotone fa-solid fa-fish"></i></button>
-        </div>
-
-        <div class="container" id="personality">
-            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Hyperactive</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Clingy</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Lazy</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Vocal</button>
-            <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Old</button>
-            <button type="button" class="btn btn-primary backBtn" onclick="updateAsideText(); showAnimals()">Back to Animals</button>
-        </div>
-
-        <div id="result" class="result"></div>
-        
-        <div class="resultBtns">
-            <button class="btn hidden" id="keepNameBtn" >Keep Name</button>
-            <button class="btn hidden" id="home" onclick="goHome()">Home</button>
-        </div>
-   </main>
-
-   <aside>
-    <p id="aside-text">
-        Can't think of a name? Click on an animal type to begin generating a name for your new pet!
-    </p>
-   </aside>
-</section>
+   </header>
    
-   <footer>
+   <section class="page-container">
+        <main>
+                <div>
+                    <button type="button" class="btn btn-primary"> 
+                        <a href="./mypets.html">My Pets &#128062;</a>
+                    </button>
+                </div>
+                
+                <div class="container active" id="animals">
+                    <button type="button" class="btn btn-primary" onclick="updateAsideText('Dog'); showPersonality()">Dog <i class="fa-duotone fa-solid fa-dog"></i></button>
+                    <button type="button" class="btn btn-primary" onclick="updateAsideText('Cat'); showPersonality()">Cat <i class="fa-solid fa-cat"></i></button>
+                    <button type="button" class="btn btn-primary" onclick="updateAsideText('Bird'); showPersonality()">Bird <i class="fa-solid fa-dove"></i></button>
+                    <button type="button" class="btn btn-primary" onclick="updateAsideText('Reptile'); showPersonality()">Reptile <i class="fa-solid fa-dragon"></i></button>
+                    <button type="button" class="btn btn-primary" onclick="updateAsideText('Fish'); showPersonality()">Fish <i class="fa-duotone fa-solid fa-fish"></i></button>
+                </div>
+
+                <div class="container" id="personality">
+                    <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Hyperactive</button>
+                    <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Clingy</button>
+                    <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Lazy</button>
+                    <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Vocal</button>
+                    <button type="button" class="btn btn-primary" onclick="getName(); updateAsideText('Personality')">Old</button>
+                    <button type="button" class="btn btn-primary backBtn" onclick="updateAsideText(); showAnimals()">Back to Animals</button>
+                </div>
+
+                <div id="result" class="result"></div>
+                
+                <div class="resultBtns">
+                    <button class="btn hidden" id="keepNameBtn" >Keep Name</button>
+                    <button class="btn hidden" id="home" onclick="goHome()">Home</button>
+                </div>
+        </main>
+
+        <aside>
+            <p id="aside-text">
+                Can't think of a name? Click on an animal type to begin generating a name for your new pet!
+            </p>
+        </aside>
+    </section>
+    
+    <footer>
             <p>Thank you!</p>
             <a href="./contributors.html"> <i class="fa-brands fa-github"></i> Contributors</a>
    </footer>
-   
    <script src="./assets/js/script.js"></script>
    <script src="https://kit.fontawesome.com/9b773112a0.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-       

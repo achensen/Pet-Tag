@@ -23,7 +23,7 @@ function getName() {
     if (availableNames.length === 0) {
         const resultDiv = document.getElementById('result');
         resultDiv.innerHTML = `No new names available! All possible names have been saved.`;
-        resultDiv.style.display = 'block';
+        resultDiv.style.display = 'flex';
         return;
     }
 
@@ -45,8 +45,6 @@ document.getElementById('keepNameBtn').addEventListener('click', function() {
     
     myPets.push(storedName);
     localStorage.setItem('myPets', JSON.stringify(myPets));
-    
-    
 })
 
 function goHome() {
