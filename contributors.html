@@ -26,8 +26,36 @@
         </section>
    </main>
 
-   <footer>
-        <p>Thank you!</p>
+   <footer>  
+
+        <button type="button" class="btn btn-primary" id="openModal">Thank You </button>
+
+        <div id="pictureModal" class="modal">
+            <div class="picture">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Thank You for Visiting, Please Consider Adoption for Your Next Pet</h2>/
+            </div>
+         </div>
+
+         <script>
+            const modal = document.getElementById('pictureModal');
+            const openModal = document.getElementById('openModal');
+            const closeModal = document.getElementById('closeModal');
+
+            openModal.onclick = function() {
+                 modal.style.display = "block";
+
+            }
+
+            closeModal.onclick = function() {
+                 modal.style.display = "none";
+            }
+
+            
+
+
+         </script>
+       
     </footer>
     <script src="https://kit.fontawesome.com/9b773112a0.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>

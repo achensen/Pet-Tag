@@ -76,3 +76,4 @@ function updateAsideText(animal) {
             asideText.textContent = "Can't think of a name? Click on an animal type to begin generating a name for your new pet!";
     }
 }
+
