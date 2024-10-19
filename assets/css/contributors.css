@@ -76,7 +76,11 @@ footer {
     width: 100%;
     max-width: 800px;
     max-height: 800px;
-    
+    text-align: center;
+}
+
+h2{
+    justify-content: center;
 }
 
 .close {
