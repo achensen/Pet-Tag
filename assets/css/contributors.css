@@ -68,18 +68,19 @@ footer {
     flex-direction: row;
 }
 
-.modal-content {
+.picture {
     background-image: url(/assets/images/CatBox.png);
-    margin: 15% auto;
+    margin: 20% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+    border: 22px solid rgb(92, 9, 92) ;
+    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
 }
 
 .close {
-    color: #aaa;
-    font-size: 28px;
+    color: #2d0505;
+    font-size: 40px;
     font-weight: bold;
     position: absolute;
     top: 10px;
