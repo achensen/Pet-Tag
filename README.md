@@ -2,6 +2,10 @@
 Bootcamp Group Project 1
 (https://achensen.github.io/Project-1/)
 
+## User Story
+- *AS A new animal caregiver*
+- *I WANT to be able to have animal names generated for me*
+- *SO THAT I can find the perfect name for my pet*
 ![Pet Tag Opening Page](assets\images\PetTagMain.png)
 ## Description
 The "Pet Name Generator" is a fun, button-based web application that helps users generate unique names for their pets. The process is interactive: users click on an animal's name, which generates additional buttons representing various characteristics of the animal. The application then uses the selected characteristics to create a personalized and unique pet name.
