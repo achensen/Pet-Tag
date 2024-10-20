@@ -33,7 +33,8 @@ The "Pet Name Generator" is a fun, button-based web application that helps users
 - The `Thank You` button at the bottom of the contributors pages will provide a message about pet adoption.
 ![Pet Tag Pet Adoption](assets\images\PetTagAdoption.png)
 ## Future Modification
-You can easily customize the application by:
-- Adding more animals by updating the `animals` array in the JavaScript file.
+You could improve this application in the future by:
+- Modifying or adding more animals 
 - Modifying or adding characteristics for each animal.
-- Styling the buttons and layout in the CSS file to suit your preferences.
+- Divide the current array used to generate a name into seperate arrays per animal and characteristic.
+- Including information for pet adoption centers. 
