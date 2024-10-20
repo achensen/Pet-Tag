@@ -20,7 +20,12 @@ The "Pet Name Generator" is a fun, button-based web application that helps users
 2. New buttons like (Hyperactive, Clingy, Lazy...). appear. appear.
 3. Click Hyperactive ...
 4. The new pet name will be generated. 
-
+![Pet Tag Name Generation](assets\images\PetTagSaveName.png)
+## Storage Options
+- You can access your saved pet names by selecting the "My Pet" Button
+- It is also possible to discard names that were saved by selecting the "x" underneath each name
+- You can choose the button "Clear All Pet Names" to remove all saved pet names from storage and start over
+![Pet Tag My Pets](assets/images/PetTagMyPets.png)
 ## Technologies Used
 - HTML for creating the structure of the web page.
 - CSS for styling buttons and layout.
