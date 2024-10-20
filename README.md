@@ -1,7 +1,7 @@
 # Pet Name Generator
 Bootcamp Group Project 1
 
-![Pet Tag Opening Page](assets\images\PetTagScreenShot1.png)
+![Pet Tag Opening Page](assets\images\PetTagMain.png)
 ## Description
 The "Pet Name Generator" is a fun, button-based web application that helps users generate unique names for their pets. The process is interactive: users click on an animal's name, which generates additional buttons representing various characteristics of the animal. The application then uses the selected characteristics to create a personalized and unique pet name.
 
@@ -14,7 +14,7 @@ The "Pet Name Generator" is a fun, button-based web application that helps users
 1. Animal Selection: The user starts by clicking on an animal button (e.g., "Dog").
 2. Select Characteristics: After choosing an animal, new buttons representing different characteristics (Hyperactive, Clingy, Lazy...). appear.
 3. Name Generation: The app generates a custom pet name based on the selected animal and its characteristics.
-
+![Pet Tag Animal Characteristics](assets\images\PetTagCharacteristics.png)
 ## Example
 1. Click the Dog button.
 2. New buttons like (Hyperactive, Clingy, Lazy...). appear. appear.
