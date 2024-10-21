@@ -1,6 +1,6 @@
 # Pet Name Generator
 Bootcamp Group Project 1
-(https://achensen.github.io/Project-1/)
+(https://achensen.github.io/Pet-Tag/)
 
 ## User Story
 - *AS A new animal caregiver*
