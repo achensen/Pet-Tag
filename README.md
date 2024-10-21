@@ -37,4 +37,7 @@ You could improve this application in the future by:
 - Modifying or adding more animals 
 - Modifying or adding characteristics for each animal.
 - Divide the current array used to generate a name into seperate arrays per animal and characteristic.
-- Including information for pet adoption centers. 
+- Including information for pet adoption centers.
+## CatBox Image
+- by BiancaVanDijk via Pixabay
+    https://pixabay.com/illustrations/box-cat-pet-animal-black-cat-8702500/
